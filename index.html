@@ -1,0 +1,21 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    // Redirect dengan anti-cache
+    window.location.href = "project html?v=" + new Date().getTime();
+  </script>
+</head>
+<body>
+  <p>Redirecting ke halaman utama...</p>
+  <p>Jika tidak otomatis, klik 
+    <a id="linknya" href="#">di sini</a>.
+  </p>
+
+  <script>
+    document.getElementById("linknya").href = "project.html?v=" + new Date().getTime();
+  </script>
+</body>
+</html>
